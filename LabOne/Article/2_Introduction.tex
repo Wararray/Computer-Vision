@@ -1,0 +1,24 @@
+\section{Introduction}\label{sec:2}
+    The OpenCV, Open Source Computer Vision, is a initiative to create a huge library of functions for all those students, developers, researches, entrepreneurs, companies, etc which their labor is over manipulating images inside Computer Vision's paradigm. Since it was released in 2000, openCV continuously grew and today has more than 2500 optimized algorithms, more than 47 thousand people of user community and estimated number of downloads exceeding 7 million"""".\\
+    
+    As a free software, it doesn't fear to change, looking for better performance, even it's very basic core. And that's exactly what this experiment intends to do, by comparing the creation of 3 different images through \texttt{IplImage} concept and \texttt{Mat} concept. In the subsections below, it will be presented briefly the Struct and the Class, respectively. Also, the two algorithms used in the code: the filter, which sets the path for languages work on, and the time measurement function.   
+
+    \subsection{IplImage}
+        It's a C language structure, called Struct. It implies in all variables inside be public and that it doesn't have Methodes by its own. As described by webpage of OpenCV:
+        \begin{quotation}
+        
+        \emph{
+        ``The IplImage is taken from the Intel Image Processing Library, in which the format is native. OpenCV only supports a subset of possible IplImage formats, as outlined in the parameter list above''.}
+        \end{quotation} 
+
+    \subsection{Mat}
+        A Class, with all that implies, since private variables until overload and polymorphism of its methods. Other main difference is how Mat, since it's a C++ construction, deals with memory allocation, keeping the programmer less concerned with parallel issues of his or her main focus of work. As described by webpage of OpenCV: 
+
+        \begin{quotation}
+        
+        \emph{
+        ``Mat is basically a class with two data parts: the matrix header (containing information such as the size of the matrix, the method used for storing, at which address is the matrix stored, and so on) and a pointer to the matrix containing the pixel values (taking any dimensionality depending on the method chosen for storing) . The matrix header size is constant, however the size of the matrix itself may vary from image to image and usually is larger by orders of magnitude.''}   
+        \end{quotation}
+
+    \subsection{Filters and Noise}
+        As it is not the goal of this work, it's not to be spoken here. The only comprehension needed is that a noise is every distortion of the real representation of data sampling. Defying it like this, the code shown in ?BElow? is a filter, an algorithm to reduce this distortions. It's clear that the core function access all elements in the image created. And it is all that matters, because this work wants to evaluate the speed of the computing of those actions.
