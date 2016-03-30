@@ -15,6 +15,7 @@ int main()
 //  uint64 execTime1 = getTime64();
   struct timeval inicio, final;
   int tmili;
+  gettimeofday(&inicio, NULL);
 
   IplImage            *cvImg; // Objeto usado para armazenar a imagem
   CvSize              imgSize;
@@ -24,13 +25,11 @@ int main()
  
   cvImg = cvCreateImage( imgSize, 8, 1 );
 
-  gettimeofday(&inicio, NULL);
 
   for ( i1 = 0; i1 < imgSize.width; i1++ )
       for ( j1 = 0; j1 < imgSize.height; j1++ )
           ((uchar*)(cvImg->imageData + cvImg->widthStep*j1))[i1] = ( char ) ( ( i1 * j1 ) % 256 );
 
-  gettimeofday(&final, NULL);
 
   cvNamedWindow( "Abrindo a Imagem Gerada...", 1 );
   cvShowImage( "Abrindo a Imagem Gerada...", cvImg );
@@ -38,6 +37,7 @@ int main()
   cvDestroyWindow( "image" );
   cvReleaseImage( &cvImg );
 
+  gettimeofday(&final, NULL);
   //uint64 execTime2 = getTime64();
   tmili = (int) (1000 * (final.tv_sec - inicio.tv_sec) + (final.tv_usec - inicio.tv_usec) / 1000);
 

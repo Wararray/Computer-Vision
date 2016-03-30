@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( cv2_8640x4320 )
+find_package( OpenCV REQUIRED )
+add_executable( cv2_8640x4320 cv2_8640x4320.cpp )
+target_link_libraries( cv2_8640x4320 ${OpenCV_LIBS} )
