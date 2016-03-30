@@ -1,4 +1,5 @@
 #include <opencv/cv.h>
+#include <opencv2/opencv.hpp>
 #include <opencv/highgui.h>
 #include <stdio.h>
 #include <sys/time.h>
@@ -25,11 +26,11 @@ int main()
           ((uchar*)(cvImg->imageData + cvImg->widthStep*j1))[i1] = ( char ) ( ( i1 * j1 ) % 256 );
 
   uint64 r1 = getTime64();
-  cout<< "r1 = " << r1 << endl;
+  cout<< "Erre1 = " << r1 << endl;
 
   cvNamedWindow( "Abrindo a Imagem Gerada...", 1 );
   cvShowImage( "Abrindo a Imagem Gerada...", cvImg );
-  cvWaitKey( 2 );
+  cvWaitKey(4000);
   cvDestroyWindow( "image" );
   cvReleaseImage( &cvImg );
 

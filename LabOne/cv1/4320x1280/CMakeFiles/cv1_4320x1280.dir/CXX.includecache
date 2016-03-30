@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/brainiac/Documents/PVC/LabOne/cv1/4320x1280/cv1_4320x1280.cpp
+opencv/cv.h
+-
+opencv2/opencv.hpp
+-
+opencv/highgui.h
+-
+stdio.h
+-
+sys/time.h
+-
+ctime
+-
+
