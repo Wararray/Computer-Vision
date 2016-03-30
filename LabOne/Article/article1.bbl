@@ -1,0 +1,16 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{{\em Linux Manual Page}}{2016}{Linux.die}
+{\em Linux Manual Page}  \harvardyearleft 2016\harvardyearright .
+\newblock Website: \url{http://linux.die.net/man/2/gettimeofday}.
+
+\harvarditem{{\em OpenCV Documentation}}{2016a}{OpenCV}
+{\em OpenCV Documentation}  \harvardyearleft 2016a\harvardyearright .
+\newblock Website: \url{http://opencv.org/about.html}.
+
+\harvarditem{{\em OpenCV Documentation}}{2016b}{GoodWay}
+{\em OpenCV Documentation}  \harvardyearleft 2016b\harvardyearright .
+\newblock Website:
+  \url{http://docs.opencv.org/2.4/doc/tutorials/core/how_to_scan_images/how_to_scan_images.html}.
+
+\end{thebibliography}
